@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Carcavelos",
+    "coordinates": {
+      "lat": 38.676,
+      "lon": -9.337
+    },
+    "min_skill_level": "BEGINNER",
+    "optimal_swell_size": [0.5, 1.5],
+    "optimal_swell_direction": 270,
+    "optimal_wind_direction": 90,
+    "description": "Sandy beach break, consistent and beginner-friendly with small to medium waves."
+  },
+  {
+    "name": "Praia do Guincho",
+    "coordinates": {
+      "lat": 38.733,
+      "lon": -9.473
+    },
+    "min_skill_level": "INTERMEDIATE",
+    "optimal_swell_size": [1.0, 2.5],
+    "optimal_swell_direction": 300,
+    "optimal_wind_direction": 60,
+    "description": "Exposed beach with strong winds and powerful waves. Can get challenging."
+  },
+  {
+    "name": "Costa da Caparica",
+    "coordinates": {
+      "lat": 38.644,
+      "lon": -9.236
+    },
+    "min_skill_level": "BEGINNER",
+    "optimal_swell_size": [0.5, 1.5],
+    "optimal_swell_direction": 260,
+    "optimal_wind_direction": 80,
+    "description": "Long sandy coastline with many peaks. Good for beginners and intermediates."
+  },
+  {
+    "name": "Praia Grande (Sintra)",
+    "coordinates": {
+      "lat": 38.815,
+      "lon": -9.478
+    },
+    "min_skill_level": "INTERMEDIATE",
+    "optimal_swell_size": [1.0, 2.5],
+    "optimal_swell_direction": 290,
+    "optimal_wind_direction": 70,
+    "description": "Powerful beach break with consistent swell. Can get big and heavy."
+  },
+  {
+    "name": "São Julião",
+    "coordinates": {
+      "lat": 38.864,
+      "lon": -9.444
+    },
+    "min_skill_level": "INTERMEDIATE",
+    "optimal_swell_size": [0.8, 2.0],
+    "optimal_swell_direction": 280,
+    "optimal_wind_direction": 90,
+    "description": "Less crowded spot with good sandbanks. Works well with west swells."
+  },
+  {
+    "name": "The Cave",
+    "coordinates": {
+      "lat": 38.864,
+      "lon": -9.444
+    },
+    "min_skill_level": "ADVANCED",
+    "optimal_swell_size": [0.8, 2.0],
+    "optimal_swell_direction": 280,
+    "optimal_wind_direction": 90,
+    "description": "Less crowded slab with barrels. Ideal for advance or professional surfers."
+  }
+]

@@ -1,0 +1,1 @@
+"""Openswell domain objects entrypoint."""
