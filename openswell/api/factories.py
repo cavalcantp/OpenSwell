@@ -1,11 +1,11 @@
 """API factory defintion."""
 from fastapi import FastAPI
 from openswell.api.lifespan import generate_lifespan
-from openswell.api.routes import register_routes
+from openswell.api.routes import register_api_routes
 from openswell.core.config import Config
 
 
-def build_api_app(
+def build_api(
     config: Config | None = None,
 ) -> FastAPI:
     """
@@ -23,7 +23,7 @@ def build_api_app(
         lifespan=lifespan,
     )
 
-    register_routes(app=app)
+    register_api_routes(app=app)
 
     return app
 

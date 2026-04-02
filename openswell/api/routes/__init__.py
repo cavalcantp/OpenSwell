@@ -3,12 +3,12 @@ from fastapi import FastAPI
 from openswell.api.routes.health import router as health_router
 from openswell.api.routes.v1 import build_v1_router
 
-def register_routes(app: FastAPI) -> None:
+def register_api_routes(app: FastAPI) -> None:
     """
-    Register all routes of the API with the FastAPI app.
+    Register routes of the API.
     
     Args:
-        app: the FastAPI application.
+        app: the fastAPI service.
         config: the app configuration.
     """
     app.include_router(
@@ -19,4 +19,4 @@ def register_routes(app: FastAPI) -> None:
 
     app.include_router(router=build_v1_router(), prefix="/api/v1")
 
-__all__ = ["register_routes"]
+__all__ = ["register_api_routes"]

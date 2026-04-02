@@ -1,6 +1,6 @@
 """Openswell service function definition"""
 from fastapi import FastAPI
-from openswell.api import build_api_app
+from openswell.api import build_api
 
 def create_app() -> FastAPI:
-    return build_api_app()
+    return build_api()
