@@ -1,5 +1,5 @@
-# Openswell
-`Openswell` aims to provide each surfer with an all-knowing surfing buddy.
+# OpenSwell
+`OpenSwell` aims to provide each surfer with an all-knowing surfing buddy.
 
 ## Consolidated features and architecture
 
@@ -19,7 +19,7 @@ As we move toward more powerful underlying models, we adopt the Tool Use Pattern
 
 ## Application and Architecture Evolution
 
-Once we start adding more features to the `Openswell` application, such as a surf board recommender system, surf trip planner, we will leverage the Routing Pattern, where a router agent distributes tasks amongst specialized agents. This way we can better optimized each specialists prompts and increase context efficiency, also avoiding unecessary iteration loops due to model confusion.
+Once we start adding more features to the `OpenSwell` application, such as a surf board recommender system, surf trip planner, we will leverage the Routing Pattern, where a router agent distributes tasks amongst specialized agents. This way we can better optimized each specialists prompts and increase context efficiency, also avoiding unecessary iteration loops due to model confusion.
 
 Regarding the recommender system, we can move from the current rule based system to a ML-powered one. That also goes for any other recommendatin features added.
 

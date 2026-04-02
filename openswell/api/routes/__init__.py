@@ -1,7 +1,7 @@
 """Openswell API routes entrypoint."""
 from fastapi import FastAPI
 from openswell.api.routes.health import router as health_router
-from openswell.api.routes.v1 import build_v1_router
+from openswell.api.routes.v1 import build_router as build_v1_router
 
 def register_api_routes(app: FastAPI) -> None:
     """
