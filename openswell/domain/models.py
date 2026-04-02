@@ -55,25 +55,21 @@ class SurferPreferences(BaseModel):
     max_swell_size: float | None = None
     preferred_swell_size: Tuple[float, float] | None = None
     goal: str | None = None
-    stance: Stance = Stance.UNKNOWN  # "regular" | "goofy"
+    stance: Stance = Stance.UNKNOWN
     avoid_crowds: bool | None = False
 
 
 class Recommendation(BaseModel):
     spot: SurfSpot
     score: float = Field(..., description="Computed score for ranking")
-
-    # Structured explanation inputs (NOT final text!)
     swell_size: float
     swell_direction: float
     wind_speed: float
     wind_direction: float
 
-    # Optional debug info (very useful during development)
+    # Optional debug info
     score_breakdown: dict | None = None
 
-
-# --- Aggregated Response ---
 
 class RecommendationResult(BaseModel):
     location: Coordinates
