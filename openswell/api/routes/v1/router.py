@@ -1,4 +1,4 @@
-"""OpenSwell API v1 routes."""
+"""Factory method of OpenSwell API v1 routes."""
 from fastapi import APIRouter
 from openswell.api.routes.v1.endpoints import chat
 

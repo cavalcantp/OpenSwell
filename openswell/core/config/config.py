@@ -1,4 +1,4 @@
-"""Openswell configuration class defintiion."""
+"""Openswell config class."""
 import os
 from importlib_metadata import version as package_version
 from typing import ClassVar, Self
@@ -60,6 +60,6 @@ class Config(BaseSettings):
     
     @property
     def version(self: Self):
-        """Get Service package version."""
+        """Get version of service package."""
         package_name = __name__.split(".")[0]
         return package_version(package_name)

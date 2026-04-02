@@ -1,4 +1,4 @@
-"""Geocode API client defintion."""
+"""Geocode API client."""
 import httpx
 from typing import Self
 from openswell.core.config import Config

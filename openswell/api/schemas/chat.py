@@ -1,4 +1,4 @@
-"""Openswell API chat endpoint schemas."""
+"""Schemas for Openswell API chat endpoint."""
 from pydantic import BaseModel
 
 class ChatRequest(BaseModel):

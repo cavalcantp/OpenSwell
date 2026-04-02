@@ -1,4 +1,4 @@
-"""Openswell API chat endpoint defintion."""
+"""Openswell API chat endpoint."""
 from typing import Annotated
 from fastapi import APIRouter, Depends
 from langchain_core.runnables import Runnable

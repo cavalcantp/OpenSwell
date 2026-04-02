@@ -1,4 +1,4 @@
-"""Openswell clients entrypoint."""
+"""entrypoint for Openswell clients."""
 from openswell.clients.swell import SwellClient
 from openswell.clients.weather import WeatherClient
 from openswell.clients.geocode import GeocodeClient

@@ -9,7 +9,7 @@ def build_api(
     config: Config | None = None,
 ) -> FastAPI:
     """
-    Factory function to build FastAPI application, based on configurations.
+    Factory function to build API, based on configurations.
     """
 
     config = config or Config()
@@ -18,7 +18,7 @@ def build_api(
     app = FastAPI(
         title="openswell",
         description="Openswell surf recommender agent.",
-        version=config.version,
+        version=config.service_version,
         openapi_url="/common/api-docs",
         lifespan=lifespan,
     )

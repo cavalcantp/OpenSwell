@@ -1,4 +1,5 @@
-"""Unit tests for API app definition."""
+"""Examplar unit tests for openswell API. 
+Low coverage as this is a toy example"""
 from http import HTTPStatus
 from fastapi.testclient import TestClient
 

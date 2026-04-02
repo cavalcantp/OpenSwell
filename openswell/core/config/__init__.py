@@ -1,4 +1,4 @@
-"""Openswell configuration entrypoint."""
+"""Entrypoint for Openswell configurations."""
 from openswell.core.config.config import Config
 from openswell.core.config.model import ModelApiConfig, LlmProvider
 from openswell.core.config.weather import WeatherApiConfig

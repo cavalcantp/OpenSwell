@@ -1,4 +1,4 @@
-"""Swell API client defintion."""
+"""Swell API client."""
 import httpx
 from typing import Self
 from datetime import datetime

@@ -1,4 +1,4 @@
-"""Openswell service function definition"""
+"""Openswell service factory wrapper."""
 from fastapi import FastAPI
 from openswell.api import build_api
 
