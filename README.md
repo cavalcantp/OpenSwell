@@ -15,7 +15,7 @@ The architecure follows a Workflow Pattern, using Prompt Chaining to leverage th
 
 ## Ongoing iteration
 
-As we move toward more powerful (paid) underlying models, we adopt the Tool Use Pattern and Reflection Pattern, in order to increase the systems autonomy, handling function calling suggestion to the underlying model, and allowing for re-terations driven by the model's reasoning about output quality. The amount of allowed iterations is bounded to avoid that the model falls into the trap of deep iteration, leading to increased preceived latency and cost.
+As we move toward more powerful underlying models, we adopt the Tool Use Pattern and Reflection Pattern, in order to increase the systems autonomy, handling function calling suggestion to the underlying model, and allowing for re-terations driven by the model's reasoning about output quality. The amount of allowed iterations is bounded to avoid that the model falls into the trap of deep iteration, leading to increased preceived latency and cost.
 
 ## Application and Architecture Evolution
 
