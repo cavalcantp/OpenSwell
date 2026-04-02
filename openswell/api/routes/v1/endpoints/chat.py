@@ -6,7 +6,7 @@ from langchain_core.runnables import Runnable
 from openswell.agents import execute_workflow
 from openswell.services import GeocodeService, SurfRecommenderService
 from openswell.api.schemas import ChatRequest, ChatResponse
-from openswell.api.dependencies import fetch_geocode_service, fetch_surf_recommender_llm, fetch_surf_recommender_service
+from openswell.api.dependencies import get_geocode_service, get_surf_recommender_llm, get_surf_recommender_service
 
 router = APIRouter()
 
@@ -17,9 +17,9 @@ router = APIRouter()
 )
 async def chat(
     chat_request: ChatRequest,
-    surf_recommender_llm: Annotated[Runnable, Depends(fetch_surf_recommender_llm)],
-    surf_recommender_service: Annotated[SurfRecommenderService, Depends(fetch_surf_recommender_service)],
-    geocoding_service: Annotated[GeocodeService, Depends(fetch_geocode_service)],
+    surf_recommender_llm: Annotated[Runnable, Depends(get_surf_recommender_llm)],
+    surf_recommender_service: Annotated[SurfRecommenderService, Depends(get_surf_recommender_service)],
+    geocoding_service: Annotated[GeocodeService, Depends(get_geocode_service)],
 ) -> ChatResponse:
     user_input = chat_request.message
     response = await execute_workflow(
