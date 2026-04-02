@@ -13,8 +13,9 @@ The AI surfing assistant collects user input, augments it with local swell and w
 
 The AI surfing assistant collects all this information from the interactions with the user, augments it with local swell and wind conditions, and descriptions of the most famous surfing spots in the surfer's region. Then all this information is passed through a scoring-ranking system, and recommendations are fed into the underlying foundation model that acts as an explaner, providing arguments that back the recommendations.
 
-API design: Leverages dependency injection and factory methods for routers and application components, improving testability and modularity of the system's components. It leverages the state Singleton to manage dependecies via lifespan events.
-Agentic workflow: Follows a Workflow Pattern with prompt chaining to leverage the foundation model as an intent identifier and explainer, while scoring logic remains controlled by the business logic, avoiding scoring issues related to model's probabilistic nature, since we are constrained to locally served models (llama3 via ollama).
+`API design`: Leverages dependency injection and factory methods for routers and application components, improving testability and modularity of the system's components. It leverages the state Singleton to manage dependecies via lifespan events.
+
+`Agentic workflow`: Follows a Workflow Pattern with prompt chaining to leverage the foundation model as an intent identifier and explainer, while scoring logic remains controlled by the business logic, avoiding scoring issues related to model's probabilistic nature, since we are constrained to locally served models (llama3 via ollama).
 
 
 ## Ongoing iteration
@@ -38,3 +39,8 @@ Besides the natural steps to be taken in terms of feature expansion and architec
 - Containerize application
 - Mock K8s manifest files
 - Build simple frontend
+
+## Local Run
+- Setup swell and weather API credentials and configure it via env vars(ex: OPENSWELL__SWELL_API__API_KEY) in your launch.json
+- Create local spots store and configure corresponding env vars
+- Create venv and execute create_service()
