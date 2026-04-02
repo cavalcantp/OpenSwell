@@ -1,1 +1,0 @@
-"""API factory function endpoint."""

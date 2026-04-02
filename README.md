@@ -26,6 +26,7 @@ Regarding the recommender system, we can move from the current rule based system
 ## TODOs:
 Besides the natural steps to be taken in terms of feature expansion and architectural evolution, the following topics also must be addressed:
 - Increase test coverage (services, clients, not limited only to API endpoints)
+- Add proper exception handling, retries and middleware
 - Include integration tests (use testcontaianers)
 - Migrate from poetry to uv
 - Containerize application
