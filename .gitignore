@@ -1,2 +1,9 @@
 .vscode/*
 !.vscode/extensions.json
+.mypy_cache
+.pytest_cache/
+/.project
+/.pydevproject
+profile.py
+test-reports/
+tmp/
